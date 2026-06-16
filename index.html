@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caçadores de Meteoritos</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0b1026, #1f2937);
+    color:white;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.hero{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero img{
+    width:200px;
+    border-radius:50%;
+    margin-bottom:20px;
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+.hero h1{
+    color:#FFD700;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:1.2rem;
+}
+
+.card{
+    background:white;
+    color:#333;
+    padding:25px;
+    margin:25px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card h2{
+    color:#1565C0;
+    margin-bottom:15px;
+    border-bottom:2px solid #1565C0;
+    padding-bottom:10px;
+}
+
+.card p{
+    margin-bottom:10px;
+}
+
+strong{
+    color:#0D47A1;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#ccc;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <img src="Caçadores.png" alt="Logo Caçadores de Meteoritos">
+
+        <h1>☄️ CAÇADORES DE METEORITOS ☄️</h1>
+
+        <p>
+            "Descobrindo tesouros do espaço para o mundo."
+        </p>
+    </header>
+
+    <div class="card">
+    <h2>1. Identidade Virtual da Empresa</h2>
+
+    <p><strong>Nome da Empresa:</strong> Caçadores de Meteoritos</p>
+
+    <p><strong>Slogan:</strong> "Descobrindo tesouros do espaço para o mundo."</p>
+
+    <h2>Sobre a Empresa</h2>
+
+    <p>
+        A <strong>Caçadores de Meteoritos</strong> é uma empresa especializada na
+        busca, identificação e comercialização de meteoritos encontrados em regiões
+        remotas. Com a missão de transformar descobertas espaciais em conhecimento e
+        oportunidades, a empresa conecta suas descobertas a museus, universidades,
+        centros de pesquisa e colecionadores de todo o mundo.
+    </p>
+
+    <p>
+        Por meio do sistema <strong>AstroTracker</strong>, os caçadores podem
+        registrar novas descobertas, anexar fotos e informações detalhadas sobre os
+        meteoritos encontrados. Cada item passa por um rigoroso processo de análise
+        realizado por geólogos especializados para garantir sua autenticidade e
+        procedência.
+    </p>
+
+    <p>
+        Após a aprovação dos especialistas, os meteoritos podem ser disponibilizados
+        em leilões virtuais e recebem certificados de autenticidade, assegurando
+        transparência, segurança e confiabilidade em todas as etapas do processo.
+    </p>
+    </div> 
+
+    <div class="card">
+        <h2>2. Requisitos Funcionais</h2>
+
+        <p><strong>RF01:</strong> Permitir login com e-mail e senha.</p>
+
+        <p><strong>RF02:</strong> Permitir cadastro de descobertas de meteoritos.</p>
+
+        <p><strong>RF03:</strong> Permitir consulta das descobertas cadastradas.</p>
+
+        <p><strong>RF04:</strong> Permitir emissão de laudos geológicos.</p>
+
+        <p><strong>RF05:</strong> Garantir avaliação independente dos geólogos.</p>
+
+        <p><strong>RF06:</strong> Registrar aprovações e reprovações.</p>
+
+        <p><strong>RF07:</strong> Verificar aprovação de dois geólogos.</p>
+
+        <p><strong>RF08:</strong> Reter item para análise física em caso de divergência.</p>
+
+        <p><strong>RF09:</strong> Permitir leilão apenas para meteoritos aprovados.</p>
+
+        <p><strong>RF10:</strong> Emitir certificado de autenticidade.</p>
+
+        <p><strong>RF11:</strong> Armazenar histórico de avaliações.</p>
+    </div>
+
+    <div class="card">
+        <h2>3. Requisitos Não Funcionais</h2>
+
+        <p><strong>RNF01:</strong> Carregamento das páginas em até 3 segundos.</p>
+
+        <p><strong>RNF02:</strong> Proteção dos dados de login.</p>
+
+        <p><strong>RNF03:</strong> Disponibilidade durante o horário de funcionamento.</p>
+
+        <p><strong>RNF04:</strong> Interface simples e intuitiva.</p>
+
+        <p><strong>RNF05:</strong> Compatibilidade com Chrome, Firefox e Edge.</p>
+
+        <p><strong>RNF06:</strong> Responsividade para celular, tablet e computador.</p>
+
+        <p><strong>RNF07:</strong> Integridade dos dados cadastrados.</p>
+
+        <p><strong>RNF08:</strong> Confiabilidade do histórico de avaliações.</p>
+
+        <p><strong>RNF09:</strong> Facilidade de manutenção do sistema.</p>
+
+        <p><strong>RNF10:</strong> Capacidade de crescimento sem perda de desempenho.</p>
+    </div>
+<div class="card">
+
+    <h2>4. Diagrama de Casos de Uso</h2>
+
+    <div class="diagrama-container">
+        <img src="Diagrama Casos de uso.png"
+             alt="Diagrama de Casos de Uso do Sistema Caçadores de Meteoritos"
+             class="diagrama">
+    </div>
+
+    <p class="legenda">
+        Figura 1 – Diagrama de Casos de Uso do Sistema Caçadores de Meteoritos.
+    </p>
+
+    <h3>Explicação do Fluxo</h3>
+
+    <p>
+        O processo começa quando o <strong>Caçador</strong> realiza o login e
+        registra uma nova descoberta de meteorito, anexando fotos e informações
+        relevantes sobre o material encontrado.
+    </p>
+
+    <p>
+        Após o cadastro, a descoberta é armazenada no sistema e encaminhada para
+        avaliação dos geólogos responsáveis.
+    </p>
+
+    <p>
+        Os <strong>Geólogos</strong> analisam o meteorito de forma independente,
+        emitindo seus laudos sem acesso à avaliação do outro especialista.
+    </p>
+
+    <p>
+        O sistema verifica automaticamente os pareceres emitidos. Caso os dois
+        geólogos aprovem a autenticidade do meteorito, o item é liberado para o
+        módulo de <strong>Leilão Virtual</strong>.
+    </p>
+
+    <p>
+        Se houver divergência entre os laudos, o meteorito é encaminhado para
+        uma análise física mais detalhada antes de qualquer negociação.
+    </p>
+
+    <p>
+        Os <strong>Compradores</strong> podem participar do leilão dos
+        meteoritos aprovados e realizar lances pelos itens disponíveis.
+    </p>
+
+    <p>
+        Após a conclusão do processo, o sistema gera um
+        <strong>Certificado de Autenticidade</strong>, garantindo a procedência
+        e a validade da rocha espacial.
+    </p>
+
+    <p>
+        O <strong>Administrador</strong> acompanha todo o processo, gerencia
+        usuários, consulta laudos e monitora os certificados emitidos pelo
+        sistema.
+    </p>
+
+</div>
+
+<style>
+.diagrama-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.diagrama{
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.legenda{
+    text-align:center;
+    font-style:italic;
+    margin-top:10px;
+    color:#666;
+}
+
+.card h3{
+    margin-top:25px;
+    color:#1565C0;
+}
+
+.card p{
+    margin-bottom:12px;
+    text-align:justify;
+}
+
+</style>
+<div class="card" id="classes">
+
+    <h2>5. Diagrama de Classes</h2>
+
+    <div class="diagrama-container">
+    <img src="Diagrama de classe.png"
+         alt="Diagrama de Classes"
+         class="diagrama">
+    </div>
+
+    <p class="legenda">
+        Figura 2 – Diagrama de Classes do Sistema AstroTracker.
+    </p>
+
+    <h3>Explicação do Diagrama</h3>
+
+    <p>
+        A classe Usuário representa a base do sistema, contendo informações
+        comuns como nome, e-mail e senha.
+    </p>
+
+    <p>
+        As classes Caçador, Geólogo e Administrador herdam as características
+        da classe Usuário e possuem responsabilidades específicas dentro do
+        sistema.
+    </p>
+
+    <p>
+        O Caçador é responsável pelo cadastro dos meteoritos encontrados.
+    </p>
+
+    <p>
+        Cada Meteorito pode possuir um ou mais Laudos emitidos por geólogos
+        independentes para validação da autenticidade.
+    </p>
+
+    <p>
+        Somente meteoritos aprovados por dois geólogos podem participar do
+        Leilão Virtual.
+    </p>
+
+    <p>
+        Após a aprovação e comercialização, o sistema gera um Certificado de
+        Autenticidade para garantir a procedência da rocha espacial.
+    </p>
+<footer>
+    © 2026 | Projeto desenvolvido por <strong>Allef César Figueiroa da Silva</strong>
+</footer>
+</div>
+</body>
+</html>
